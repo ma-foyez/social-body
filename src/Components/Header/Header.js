@@ -33,8 +33,9 @@ const Header = () => {
                         <Typography variant="h6" className={classes.title}>
                             <Link to="/home" style={{ textDecoration: "none", color: "white" }}>Social Body</Link>
                         </Typography>
-                        <Button color="inherit">Registration</Button>
-                        <Button color="inherit">Login</Button>
+                        <Button color="inherit"><Link style={{ textDecoration: "none", color: "white" }} to="/home">Home</Link></Button>
+                        <Button color="inherit"><Link style={{ textDecoration: "none", color: "white" }} to="/registration">Registration</Link></Button>
+                        <Button color="inherit"><Link style={{ textDecoration: "none", color: "white" }} to="/login">Login</Link></Button>
                     </Toolbar>
                 </AppBar>
             </div>

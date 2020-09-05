@@ -10,24 +10,14 @@ import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-const useStyles = makeStyles({
-    root: {
-        // maxWidth: 327,
-    },
-    media: {
-        height: 140,
-    },
-});
 
 const Post = (props) => {
-    const classes = useStyles();
     const { id, title, body } = props.post;
-
     // console.log(props.post)
 
     return (
-        <Grid item xs={12} sm={6} md={3}>
-            <Card className={classes.root} style={{ boxShadow: "4px 6px 12px -4px rgba(0,0,0,0.75)", width: "90%", }}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+            <Card style={{ boxShadow: "4px 6px 12px -4px rgba(0,0,0,0.75)", width: "90%", }}>
                 <CardActionArea>
                     <Button variant="contained" color="primary"> Post ID : {id}</Button>
                     <CardContent style={{ height: 250 }}>

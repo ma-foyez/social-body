@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import SocialContainer from './Components/SocialContainer/SocialContainer';
 import Header from './Components/Header/Header';
@@ -11,20 +10,33 @@ import {
 } from "react-router-dom";
 import NotMatch from './Components/NotMatch/NotMatch';
 import PostDetails from './Components/PostDetails/PostDetails';
+import Registration from './Components/Registration/Registration';
 function App() {
   return (
     <div>
       <Router>
         <Header></Header>
         <Switch>
-          <Route exact path="/">
-            <SocialContainer></SocialContainer>
-          </Route>
           <Route path="/details/:postID">
-            <PostDetails></PostDetails>
+            <PostDetails />
           </Route>
           <Route path="/home">
-            <SocialContainer></SocialContainer>
+            <SocialContainer />
+          </Route>
+          <Route path="/home">
+            <SocialContainer />
+          </Route>
+          <Route path="/registration">
+            <Registration />
+          </Route>
+          <Route path="/login">
+            <Registration />
+          </Route>
+          <Route exact path="/">
+            <SocialContainer />
+          </Route>
+          <Route path="*">
+            <NotMatch />
           </Route>
         </Switch>
       </Router>

@@ -5,3 +5,22 @@
     color: white;
     border-radius: 10px;
 }
+.profile-img{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.profile-img img{
+    width: 130px;
+    border-radius: 50%;
+}
+.profile-title .name{
+    text-transform: capitalize;
+}
+.profile-title .email{
+    text-transform: lowercase;
+}
+.comment{
+    font-weight: 900;
+}

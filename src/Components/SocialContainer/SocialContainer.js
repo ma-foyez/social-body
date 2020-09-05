@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Post from '../Post/Post';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 const SocialContainer = () => {
     const [posts, setPosts] = useState([]);
-    // const [simplePost, setSimplePost] = useState([]);
-    // const [finalPost, setFinalPost] = useState([]);
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then(res => res.json())
