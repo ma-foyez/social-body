@@ -10,9 +10,9 @@ const SocialContainer = () => {
             .then(data => setPosts(data))
             .catch(error => console.log(error))
     }, [])
-
     return (
         <div style={{marginLeft: "15px"}}>
+
             <Grid container spacing={2} style={{ marginTop: "10px" }}>
                 {
                     posts.map(post => <Post post={post}></Post>)
